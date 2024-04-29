@@ -8,6 +8,7 @@
   <link rel="stylesheet" href= "https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -35,7 +36,7 @@
 <!--------hero-------->
 
 <section class="hero" id="home">
-  <div class="main-content">
+  <div class="main-content" data-aos="fade-in">
     <h4> Hi, There!</h4>
     <h1>I'm <span>Gianluca Ghislotti</span></h1>
     <p>In September of last year, I moved to Lugano to complete my Master's degree at the Università della Svizzera Italiana (USI). There, I met many students from all over the world and improved my English skills.</p>
@@ -59,11 +60,11 @@
 <!--------About-------->
 
 <section class="about" id="about">
-  <div class="about-img">
+  <div class="about-img" data-aos="zoom-in-down">
     <img src="images/me.jpg">
   </div>
 
-  <div class="about-text">
+  <div class="about-text" data-aos="zoom-in-up">
     <h2>
       I am Software Engineer <br> & Researcher
     </h2>
@@ -98,11 +99,11 @@
 <!--
 
 <section class="services" id="services">
-  <div class="center-text">
+  <div class="center-text" data-aos="fade-down">
     <h2>My <span>Services</span></h2>
   </div>
 
-  <div class="services-content">
+  <div class="services-content" data-aos="zoom-in-up">
     <div class="box">
       <img src="images/me.jpg">
       <h3>Service 1</h3>
@@ -142,11 +143,144 @@
 
 <!--------Projects-------->
 
+<section class="projects" id="projects">
+  <div class="center-text" data-aos="fade-down">
+    <h2>My <span>Projects</span></h2>
+  </div>
+
+  <div class="Projects-content" data-aos="zoom-in-up">
+    <!---------- First raw--------------------->
+    <div class="row">
+      <img src="images/me.jpg">
+      <div class="main-row">
+        <div class="row-text">
+          <h5>myEshop</h5>
+        </div>
+        <div class="row-icon">
+          <i class="ri-github-fill"></i>
+        </div>
+      </div>
+
+      <h4>My personal E-Commerce site, developed using Java Spring Boot</h4>
+    </div>
+
+    <!---------- Second raw--------------------->
+    <div class="row">
+      <img src="images/me.jpg">
+      <div class="main-row">
+        <div class="row-text">
+          <h5>myEshop</h5>
+        </div>
+        <div class="row-icon">
+          <i class="ri-github-fill"></i>
+        </div>
+      </div>
+
+      <h4>My personal E-Commerce site, developed using Java Spring Boot</h4>
+    </div>
+
+  <!---------- Third raw--------------------->
+  <div class="row">
+    <img src="images/me.jpg">
+    <div class="main-row">
+      <div class="row-text">
+        <h5>myEshop</h5>
+      </div>
+      <div class="row-icon">
+        <i class="ri-github-fill"></i>
+      </div>
+    </div>
+
+    <h4>My personal E-Commerce site, developed using Java Spring Boot</h4>
+  </div>
+
+  <!---------- Fourth raw--------------------->
+  <div class="row">
+    <img src="images/me.jpg">
+    <div class="main-row">
+      <div class="row-text">
+        <h5>myEshop</h5>
+      </div>
+      <div class="row-icon">
+        <i class="ri-github-fill"></i>
+      </div>
+    </div>
+
+    <h4>My personal E-Commerce site, developed using Java Spring Boot</h4>
+  </div>
+
+  <!---------- Fifth raw--------------------->
+  <div class="row">
+    <img src="images/me.jpg">
+    <div class="main-row">
+      <div class="row-text">
+        <h5>myEshop</h5>
+      </div>
+      <div class="row-icon">
+        <i class="ri-github-fill"></i>
+      </div>
+    </div>
+
+    <h4>My personal E-Commerce site, developed using Java Spring Boot</h4>
+  </div>
+
+  <!---------- Sixth raw--------------------->
+  <div class="row">
+    <img src="images/me.jpg">
+    <div class="main-row">
+      <div class="row-text">
+        <h5>myEshop</h5>
+      </div>
+      <div class="row-icon">
+        <i class="ri-github-fill"></i>
+      </div>
+    </div>
+
+    <h4>My personal E-Commerce site, developed using Java Spring Boot</h4>
+  </div>
+
+  </div>
+
+</section>
 
 
+<!--------Contact-------->
+<section class="contact" id="contact">
+  <div class="center-text" data-aos="fade-down">
+    <h2>Contact <span>Me</span></h2>
+  </div>
+
+  <div class="contact-form" data-aos="zoom-in">
+    <form action="">
+      <input type="text" placeholder="Your name" required>
+      <input type="email" placeholder="Email address" required>
+      <textarea name="" id="" cols="30" rows="10" placeholder="Write your message here"></textarea>
+      <input type="submit" name="" value="Send Message" class="send-btn">
+    </form>
+  </div>
+</section>
+
+<!--------Footer-------->
+<div class="footer">
+  <div class="copyright">
+    <p>2024 Gianluca Ghislotti, All Rights Reserved.</p>
+  </div>
+
+  <a href="#home" class="scroll-top">
+    <i class="ri-arrow-up-s-fill"></i>
+  </a>
+</div>
 
 <!--------js link-------->
   <script src="script.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 1400,
+    });
+  </script>
 
 </body>
 </html>
