@@ -710,6 +710,28 @@ form .send-btn:hover{
     :root{
         --h1-font: 3.5rem;
     }
+    .home {
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+    .home-content, .home-img {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-content {
+        margin-top: 0;
+        padding: 20px;
+    }
+
+    .home-img img {
+        width: 80%;
+        height: auto;
+        margin: 20px auto;
+    }
     .social{
         margin-bottom: 20px;
     }
