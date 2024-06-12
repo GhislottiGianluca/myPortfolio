@@ -811,9 +811,11 @@ form .send-btn:hover{
     }
 
     .home-img img {
-        width: 80%;
-        height: auto;
-        margin: 20px auto;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto;
     }
     .home-content p{
         font-size: 10px;
@@ -857,75 +859,21 @@ form .send-btn:hover{
     .timeline-item:nth-child(even) p {
         text-align: left;
     }
+
+    .Projects-content .row {
+        border: 1px solid var(--main-color);
+    }
+
+    .Projects-content .row img {
+        display: block;
+        margin: 0 auto;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .center-text h2{
+        font-size: 32px;
+    }
 }
 
-@media (max-width: 390px) {
-    .main-content p{
-        width: 100%;
-    }
-
-    .home {
-        flex-direction: column;
-        justify-content: space-around;
-        margin-top: 120px;
-        margin-bottom: 120px;
-    }
-    .home-content, .home-img {
-        width: 100%;
-        align-items: center;
-        text-align: center;
-    }
-
-    .home-content {
-        margin-top: 0;
-        padding: 20px;
-    }
-
-    .home-img img {
-        width: 80%;
-        height: auto;
-        margin: 20px auto;
-    }
-    .home-content p{
-        font-size: 10px;
-    }
-    .timeline-content li{
-        font-size: 10px;
-    }
-    .main-btn {
-        margin-top: 10px;
-    }
-    .social {
-        margin-bottom: 10px;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        margin-top: 20px;
-    }
-    .social a {
-        margin: 0;
-        padding: 10px;
-    }
-    .timeline-date{
-        margin-left: 20px;
-    }
-    .contact-form form .send-btn {
-        width: 100%;
-        padding: 12px 20px;
-        font-size: 16px;
-        border-radius: 8px;
-    }
-    .row p{
-        font-size: 18px;
-    }
-    .timeline-item:nth-child(even) {
-        text-align: left;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .timeline-item:nth-child(even) h2,
-    .timeline-item:nth-child(even) p {
-        text-align: left;
-    }
-}
